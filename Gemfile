@@ -19,7 +19,6 @@ gem 'sass-rails', '~> 3.2.3'
 group :development do
     gem 'rails-erd'
     gem 'brakeman'
-    gem 'capistrano'
 end
 
 group :assets do
