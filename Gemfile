@@ -19,6 +19,7 @@ gem 'sass-rails', '~> 3.2.3'
 group :development do
     gem 'rails-erd'
     gem 'brakeman'
+    gem 'rspec-rails'
 end
 
 group :assets do
