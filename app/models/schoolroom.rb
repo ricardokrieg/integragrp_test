@@ -1,5 +1,5 @@
 class Schoolroom < ActiveRecord::Base
-    attr_accessible :name
+    attr_accessible :name, :schedules_attributes
 
     has_many :schedules
 
