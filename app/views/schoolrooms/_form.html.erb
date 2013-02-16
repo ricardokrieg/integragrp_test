@@ -3,6 +3,8 @@
 
     <%= f.simple_fields_for :schedules do |schedule_form| %>
         <%= schedule_form.association :subject %>
+        <%= schedule_form.association :teacher %>
+
         <%= schedule_form.link_to_remove 'Remove this schedule' %>
     <% end %>
 
