@@ -15,6 +15,8 @@ gem 'libv8', '~> 3.11.8'
 gem 'thin'
 gem 'nested_form'
 gem 'sass-rails', '~> 3.2.3'
+gem 'devise'
+gem 'cancan'
 
 group :development do
     gem 'rails-erd'
