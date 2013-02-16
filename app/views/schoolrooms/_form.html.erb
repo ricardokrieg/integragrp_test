@@ -1,21 +1,8 @@
-<%= form_for(@schoolroom) do |f| %>
-  <% if @schoolroom.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@schoolroom.errors.count, "error") %> prohibited this schoolroom from being saved:</h2>
+<%= simple_nested_form_for @schoolroom, :html => { :class => 'form-horizontal' } do |f| %>
+    <%= f.input :name %>
 
-      <ul>
-      <% @schoolroom.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+    <div class='form-actions'>
+        <%= f.button :submit, :class => 'btn-primary' %>
+        <%= link_to 'Cancel', schoolrooms_path, :class => 'btn' %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>
